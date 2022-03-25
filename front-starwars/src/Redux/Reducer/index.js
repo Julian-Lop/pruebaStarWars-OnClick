@@ -3,14 +3,15 @@ import {
     GET_ALL_STARSHIPS,
     GET_ALL_VEHICLES,
     RESET_STATE,
-    GET_ALL_PEOPLE
+    GET_ALL_PEOPLE,
+    GET_CHARACTERS_BY_FILM
 } from "../Actions/types" 
 
 const initialState = {
     films : [],
     starships : [],
     vehicles : [],
-    people : []
+    characters : []
 }
 
 export default function rootReducer(state = initialState, {type, payload}){
@@ -49,9 +50,24 @@ export default function rootReducer(state = initialState, {type, payload}){
         case GET_ALL_PEOPLE:
             return{
                 ...state,
-                people : payload
-            }   
+                characters : [...state.characters.concat(payload)]
+            }
+        
+        case GET_CHARACTERS_BY_FILM:
 
+            state.characters.map(character => {
+                character.films.map(filmcharact => {
+                    let indexFilm = Number(filmcharact.substr(-2,1))
+                    if(!state.films.results[indexFilm-1].people){
+                        state.films.results[indexFilm-1].people = []
+                    } 
+                    state.films.results[indexFilm-1].people.push(character)
+                    
+                })
+            })
+            return{
+                ...state
+            }
         default:
         return state
     }

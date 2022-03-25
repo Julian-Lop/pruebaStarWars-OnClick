@@ -4,7 +4,8 @@ import {
     GET_ALL_STARSHIPS,
     GET_ALL_VEHICLES,
     RESET_STATE,
-    GET_ALL_PEOPLE
+    GET_ALL_PEOPLE,
+    GET_CHARACTERS_BY_FILM
 } from '../Actions/types.js'
 
 export const getAllFilms = () => {
@@ -48,17 +49,20 @@ export const resetState = (info) => {
 }
 
 
-export const getAllPeople = (arrayPeople) => {
+export const getAllPeople = (page) => {
     return async function(dispatch){
         try {
-            let json = []
-            for(let i = 0; i < arrayPeople.length; i++){
-                let temp = await axios(`${arrayPeople[i]}`)
-                json.concat(temp.data)
-            }
-            return dispatch({type: GET_ALL_PEOPLE, payload: await json})
+            let json = await axios(`${process.env.REACT_APP_URL_SWAPI}/people/?page=${page}`)
+            return dispatch({type: GET_ALL_PEOPLE, payload:json.data.results})
         } catch (error) {
             
         }
+    }
+}
+
+
+export const getCharactersByFiml = () => {
+    return function(dispatch){
+        return dispatch({type: GET_CHARACTERS_BY_FILM, payload: null})
     }
 }
