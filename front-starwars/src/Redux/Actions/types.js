@@ -1,1 +1,5 @@
 export const GET_ALL_FILMS = 'GET_ALL_FILMS'
+export const GET_ALL_STARSHIPS = 'GET_ALL_STARSHIPS'
+export const GET_ALL_VEHICLES = 'GET_ALL_VEHICLES'
+export const RESET_STATE = 'RESET_STATE'
+export const GET_ALL_PEOPLE = 'GET_ALL_PEOPLE'
