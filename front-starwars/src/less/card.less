@@ -1,8 +1,8 @@
 .Card{
-    background: grey;
+    background: rgba(255,255,255,0.8);
     height: max-content;
     width: 350px;
-    margin: 5px;
+    margin: 25px;
     padding: 10px;
     text-align: center;
     div{
@@ -11,17 +11,44 @@
         p{
             cursor: pointer;
             background: white;
-            font-size: 13px;
-            margin-right: 5px;
+            border : 1px solid white;
+            border-radius: 5px;
+            font-size: 15px;
+            margin-right: 10px;
+            box-shadow: 0px 1px 4px 0.3px rgba(0,0,0,0.5);
+            transition: 0.4s;
+            &:hover{
+                background: black;
+                border: 1px solid black;
+                color: white;
+                transition: 0.4s;
+                box-shadow: 0px 1px 4px 0.3px rgba(0,0,0,1);
+            }
         }
+
         div{
             width: 100%;
             padding: 10px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            h4{
-                margin: 5px;
+            div{
+                width: 94%;
+                display: flex;
+                flex-direction: row;
+                h4{
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
+                span{
+                    background: white;
+                    border : 1px solid white;
+                    border-radius: 5px;
+                    margin-left: 10px;
+                    box-shadow: 0px 1px 4px 0.3px rgba(0,0,0,0.5);
+                }
+                border-bottom: 1px solid white;
             }
         }
     }

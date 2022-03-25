@@ -9,7 +9,7 @@ export default function Starships() {
     },[starshipsSW])
 
     return (
-        <div className='Container'><h1>Starships</h1>
+        <div className='Container'><h1>Starships <i class="fas fa-space-shuttle"></i></h1>
             <div className='Starships'>
                 {starshipsSW.results ? starshipsSW.results.map(starship => <CardStarships title={starship.name} info={starship}/>): <h3>Cargando</h3>}
             </div>

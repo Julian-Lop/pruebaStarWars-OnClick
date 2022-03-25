@@ -31,7 +31,8 @@ export default function Films() {
     },[flag])
 
     return (
-        <div className='Container'><h1>Films</h1>
+        <div className='Container'>
+            <h1>Films <i class="fas fa-film"></i></h1>
             <div className='Films'>
                 {filmSW.results ? filmSW.results.map(film => <Card key={film.episode_id} title={film.title} info={ characterSW ? film.people : null}/>): <h3>Cargando</h3>}
             </div>
