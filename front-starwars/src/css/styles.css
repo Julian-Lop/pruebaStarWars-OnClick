@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: #f3f3f3;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
 }
 .Navbar ul {
   width: 50%;
@@ -14,34 +14,41 @@
 .Navbar ul a {
   text-decoration: none;
   font-weight: 600;
-  color: black;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.Navbar ul a:focus {
+  color: rgba(255, 255, 255, 0.8);
 }
 .Films {
   margin-top: 20px;
-  background: #f3f3f3;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  animation-name: visible;
+  animation-duration: 0.6s;
 }
 .Starships {
   margin-top: 20px;
-  background: #f3f3f3;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  animation-name: visible;
+  animation-duration: 0.6s;
 }
 .Vehicles {
   margin-top: 20px;
-  background: #f3f3f3;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  animation-name: visible;
+  animation-duration: 0.6s;
 }
 .Card {
-  background: grey;
+  background: rgba(255, 255, 255, 0.8);
   height: max-content;
   width: 350px;
-  margin: 5px;
+  margin: 25px;
   padding: 10px;
   text-align: center;
 }
@@ -52,8 +59,19 @@
 .Card div p {
   cursor: pointer;
   background: white;
-  font-size: 13px;
-  margin-right: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-right: 10px;
+  box-shadow: 0px 1px 4px 0.3px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+.Card div p:hover {
+  background: black;
+  border: 1px solid black;
+  color: white;
+  transition: 0.4s;
+  box-shadow: 0px 1px 4px 0.3px #000000;
 }
 .Card div div {
   width: 100%;
@@ -62,33 +80,93 @@
   flex-direction: column;
   align-items: flex-start;
 }
-.Card div div h4 {
-  margin: 5px;
+.Card div div div {
+  width: 94%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid white;
+}
+.Card div div div h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.Card div div div span {
+  background: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 10px;
+  box-shadow: 0px 1px 4px 0.3px rgba(0, 0, 0, 0.5);
 }
 .Pagination {
-  background: salmon;
   display: flex;
   justify-content: center;
 }
 .Pagination button {
+  font-size: 25px;
+  width: 80px;
   margin: 10px;
+  background: none;
+  border: 1px solid white;
+  color: white;
   cursor: pointer;
+  transition: 0.4s;
+}
+.Pagination button:hover {
+  transition: 0.4s;
+  background: white;
+  color: black;
 }
 .Container {
   text-align: center;
 }
+.Container h1 {
+  color: rgba(255, 255, 255, 0.95);
+}
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .ModalCharacter {
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 180px;
-  background: aliceblue;
-  padding: 10px;
-  width: 250px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  animation-name: visible;
+  animation-duration: 0.5s;
 }
-.ModalCharacter button {
+.ModalCharacter div {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  top: 180px;
+  padding: 10px;
+  width: 450px;
+}
+.ModalCharacter div button {
+  font-size: 25px;
+  width: 80px;
+  background: none;
+  border: 1px solid black;
   cursor: pointer;
+  transition: 0.4s;
+}
+.ModalCharacter div button:hover {
+  transition: 0.4s;
+  background: black;
+  color: white;
 }

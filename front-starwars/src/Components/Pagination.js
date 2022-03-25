@@ -30,8 +30,10 @@ export default function Pagination(){
 
     return(
         <div className="Pagination">
-            <button onClick={previousPage}>Regresar</button>
-            <button onClick={nextPage} >Siguiente</button>
+            <div> 
+                <button onClick={previousPage}><i class="fas fa-caret-square-left"></i></button>
+                <button onClick={nextPage} ><i class="fas fa-caret-square-right"></i></button>
+            </div>
         </div>
     )
 }

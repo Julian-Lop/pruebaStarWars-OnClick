@@ -16,7 +16,7 @@ export default function Card({title,info}){
             <div className='Card'>
                 <h2>{title ? title : null}</h2>
                 <div>
-                    {info ? info.map(e => <p onClick={() => handleShowModal(e)}>{e.name}</p>):null}
+                    {info ? info.map(e => <p onClick={() => handleShowModal(e)}>{e.name}</p>):<h2>Cargando</h2>}
                 </div>
             </div>
         {visibility ? <ModalCharacter info={infodata} setvisibility={setvisibility}/> : null}

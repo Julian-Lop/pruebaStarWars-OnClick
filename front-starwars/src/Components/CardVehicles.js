@@ -13,18 +13,18 @@ export default function CardVehicles({title,info}){
                 <div>
                     {info ? 
                     <div>
-                        <h4>Model: {info.model}</h4>
-                        <h4>Manufacturer: {info.model}</h4>
-                        <h4>Cost in credits: {info.cost_in_credits}</h4>
-                        <h4>Length: {info.length}</h4>
-                        <h4>Max atmosphering speed: {info.max_atmosphering_speed}</h4>
-                        <h4>Crew: {info.crew}</h4>
-                        <h4>Passengers: {info.passengers}</h4>
-                        <h4>Cargo capacity: {info.cargo_capacity}</h4>
-                        <h4>Consumables: {info.consumables}</h4>
-                        <h4>Vehicle class: {info.vehicle_class}</h4>
+                        <div><h4>Model: </h4><span>{info.model}</span></div>
+                        <div><h4>Manufacturer: </h4><span>{info.model}</span></div>
+                        <div><h4>Cost in credits: </h4><span>{info.cost_in_credits}</span></div>
+                        <div><h4>Length: </h4><span>{info.length}</span></div>
+                        <div><h4>Max atmosphering speed: </h4><span>{info.max_atmosphering_speed}</span></div>
+                        <div><h4>Crew: </h4><span>{info.crew}</span></div>
+                        <div><h4>Passengers: </h4><span>{info.passengers}</span></div>
+                        <div><h4>Cargo capacity: </h4><span>{info.cargo_capacity}</span></div>
+                        <div><h4>Consumables: </h4><span>{info.consumables}</span></div>
+                        <div><h4>Vehicle class: </h4><span>{info.vehicle_class}</span></div>
                         <h4>Films : {info.films.map(f => film.results[Number(f.substr(-2,1))-1].title+', ')}</h4>
-                    </div>:null}
+                    </div>:<h2>Cargando</h2>}
                 </div>
             </div>
         </div>

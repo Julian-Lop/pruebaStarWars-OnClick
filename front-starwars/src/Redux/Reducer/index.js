@@ -4,14 +4,20 @@ import {
     GET_ALL_VEHICLES,
     RESET_STATE,
     GET_ALL_PEOPLE,
-    GET_CHARACTERS_BY_FILM
+    GET_CHARACTERS_BY_FILM,
+    GET_ALL_PLANETS,
+    STARSHIPS_FOR_MAPING,
+    VEHICLES_FOR_MAPING
 } from "../Actions/types" 
 
 const initialState = {
     films : [],
     starships : [],
     vehicles : [],
-    characters : []
+    characters : [],
+    planets : [],
+    starshipsformaping : [],
+    vehiclesformpaing : []
 }
 
 export default function rootReducer(state = initialState, {type, payload}){
@@ -68,6 +74,25 @@ export default function rootReducer(state = initialState, {type, payload}){
             return{
                 ...state
             }
+        
+        case GET_ALL_PLANETS:
+            return{
+                ...state,
+                planets : [...state.planets.concat(payload)]
+            }
+        
+        case STARSHIPS_FOR_MAPING:
+            return{
+                ...state,
+                starshipsformaping : [...state.starshipsformaping.concat(payload)]
+            }
+        
+        case VEHICLES_FOR_MAPING:
+            return{
+                ...state,
+                vehiclesformpaing : [...state.vehiclesformpaing.concat(payload)]
+            }
+
         default:
         return state
     }
