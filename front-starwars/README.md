@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+Prueba Javascript (Ionic)
+Desarrollar una web app en Ionic que tenga las siguientes funcionalidades
+Mostrar datos de una API
+Recogiéndolos de https://swapi.co/, mostrar los siguientes datos del universo Star Wars en distintas secciones:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Films. 
+    * Con el nombre de los actores que      intervienen y 
+- al hacer clic en alguno de ellos que se abra su información en un 
 
-## Available Scripts
+- modal.
+    * Starships
+    * Vehicles
 
-In the project directory, you can run:
+Estilo de programación
+Una de las cosas sobre las que más se va a puntuar es tener un estilo de programación limpio, orientado a objetos y a poder ser que use patrones de diseño correctos.
 
-### `npm start`
+Costas a tener en cuenta:
+Es imprescindible en uso de GIT y realizar los commits de manera correcta. Puedes usar GitHub o Bitbucket y después deberemos tener acceso para corregirlo.
+Notas:
+Esta prueba está orientada a programadores web, concretamente con el uso el framework React , por lo que no es necesario que funcione en dispositivos android y/o iOS, solo en el navegador.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Trabajar con GitHub directamente para la revisión de los commits y la corrección del examen.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+No hay tiempo límite, puedes tomarte “el tiempo necesario” para realizar la prueba de la mejor manera posible.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Haced la prueba de descargaros el proyecto limpio de GitHub y ejecutarlo (ionic serve).
