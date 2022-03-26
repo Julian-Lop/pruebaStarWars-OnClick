@@ -14,10 +14,19 @@
 .Navbar ul a {
   text-decoration: none;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 22px;
   color: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+.Navbar ul a:hover {
+  transition: 0.5s;
+  color: rgba(255, 255, 255, 0.8);
 }
 .Navbar ul a:focus {
+  transition: 0.5s;
+  color: rgba(255, 255, 255, 0.8);
+}
+.Navbar ul a:checked {
   color: rgba(255, 255, 255, 0.8);
 }
 .Films {
@@ -92,6 +101,60 @@
   margin-bottom: 0;
 }
 .Card div div div span {
+  background: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 10px;
+  box-shadow: 0px 1px 4px 0.3px rgba(0, 0, 0, 0.5);
+}
+.CardFilm {
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(104, 104, 104, 0.3));
+  height: 650px;
+  width: 360px;
+  margin: 25px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 5px 15px 8px rgba(0, 0, 0, 0.8);
+}
+.CardFilm div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.CardFilm div p {
+  cursor: pointer;
+  background: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-right: 10px;
+  box-shadow: 0px 1px 4px 0.3px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+.CardFilm div p:hover {
+  background: black;
+  border: 1px solid black;
+  color: white;
+  transition: 0.4s;
+  box-shadow: 0px 1px 4px 0.3px #000000;
+}
+.CardFilm div div {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.CardFilm div div div {
+  width: 94%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid white;
+}
+.CardFilm div div div h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.CardFilm div div div span {
   background: white;
   border: 1px solid white;
   border-radius: 5px;
@@ -197,12 +260,39 @@
   }
 }
 .Home {
+  height: 90.6vh;
   text-align: center;
-  margin-top: 15%;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .Home h1 {
   -webkit-text-stroke: 2px #f1e20a;
   color: black;
   font-size: 120px;
   font-weight: bold;
+}
+.Home button {
+  font-size: 25px;
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.Home button:hover {
+  transition: 0.4s;
+  background: white;
+  color: black;
+}
+.Home img {
+  align-self: center;
+  filter: blur(2px);
+  width: 150px;
+  height: 150px;
 }

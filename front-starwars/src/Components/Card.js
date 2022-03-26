@@ -13,7 +13,7 @@ export default function Card({title,info}){
 
     return (
         <div>
-            <div className='Card'>
+            <div className='CardFilm'>
                 <h2>{title ? title : null}</h2>
                 <div>
                     {info ? info.map(e => <p onClick={() => handleShowModal(e)}>{e.name}</p>):<h1>Cargando...</h1>}
