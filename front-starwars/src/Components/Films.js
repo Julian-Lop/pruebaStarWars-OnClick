@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllPeople, getCharactersByFiml } from '../Redux/Actions/index.js'
 import Card from './Card.js'
+import LoadingComponent from './LoadingComponent.js'
 
 export default function Films() {
     const dispatch = useDispatch()
@@ -34,7 +35,7 @@ export default function Films() {
         <div className='Container'>
             <h1>Films <i class="fas fa-film"></i></h1>
             <div className='Films'>
-                {filmSW.results ? filmSW.results.map(film => <Card key={film.episode_id} title={film.title} info={ characterSW ? film.people : null}/>): <h3>Cargando</h3>}
+                {filmSW.results ? filmSW.results.map(film => <Card key={film.episode_id} title={film.title} info={ characterSW ? film.people : null}/>): <LoadingComponent/>}
             </div>
         </div>
     )
