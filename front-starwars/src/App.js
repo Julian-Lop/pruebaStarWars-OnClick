@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getAllFilms, getAllPlanets, getAllStarships, getAllVehicles, starshipsForMaping, vehiclesForMaping } from './Redux/Actions';
 import '../src/css/styles.css'
 import Pagination from './Components/Pagination';
+import Home from './Components/Home';
 
 function App() {
   const dispatch = useDispatch()
@@ -44,6 +45,7 @@ function App() {
         <Route path='/*' element={<Navbar/>}/>
       </Routes>  
       <Routes>
+        <Route exact path='/' element={<Home/>}></Route>
         <Route exact path='/films' element={<Films/>}/>
         <Route exact path='/starships' element={<><Pagination/><Starships/></>}/>
         <Route exact path='/vehicles' element={<><Pagination/><Vehicles/></>}/>
