@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.57e57d9a.css",
-    "main.js": "/static/js/main.59d96b00.js",
-    "static/js/787.bd78c9ec.chunk.js": "/static/js/787.bd78c9ec.chunk.js",
-    "static/media/fondo2.jpg": "/static/media/fondo2.4ef39e93a224e862457a.jpg",
-    "index.html": "/index.html",
-    "main.57e57d9a.css.map": "/static/css/main.57e57d9a.css.map",
-    "main.59d96b00.js.map": "/static/js/main.59d96b00.js.map",
-    "787.bd78c9ec.chunk.js.map": "/static/js/787.bd78c9ec.chunk.js.map"
+    "main.css": "/pruebaStarWars-OnClick/static/css/main.a2ce0606.css",
+    "main.js": "/pruebaStarWars-OnClick/static/js/main.9b9afe2b.js",
+    "static/js/787.bd78c9ec.chunk.js": "/pruebaStarWars-OnClick/static/js/787.bd78c9ec.chunk.js",
+    "static/media/fondo2.jpg": "/pruebaStarWars-OnClick/static/media/fondo2.4ef39e93a224e862457a.jpg",
+    "index.html": "/pruebaStarWars-OnClick/index.html",
+    "main.a2ce0606.css.map": "/pruebaStarWars-OnClick/static/css/main.a2ce0606.css.map",
+    "main.9b9afe2b.js.map": "/pruebaStarWars-OnClick/static/js/main.9b9afe2b.js.map",
+    "787.bd78c9ec.chunk.js.map": "/pruebaStarWars-OnClick/static/js/787.bd78c9ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57e57d9a.css",
-    "static/js/main.59d96b00.js"
+    "static/css/main.a2ce0606.css",
+    "static/js/main.9b9afe2b.js"
   ]
 }
